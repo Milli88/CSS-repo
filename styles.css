@@ -1,7 +1,7 @@
 /*
 
 */
-
+/*  */
 html, body{
     width: 100%;
     min-height: 100%;
@@ -9,14 +9,36 @@ html, body{
     gap:1rem;
 }
 
+#mydiv {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 1px solid #d3d3d3;
+}
+
+#mydivheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #2196F3;
+  color: #fff;
+}
+
 
 .container{
     display: grid;
     grid-template-columns: minmax(0, 600px);
     justify-content: center;
-    width: 100%;
-    min-height: 100%;
+    width: 80%;
+    min-height: 80%;
     justify-items: center;
+    border: solid red;
+    position: relative;
+}
+
+.container p{
+    background-color: aqua;
 }
 
 .block{
